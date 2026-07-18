@@ -3,47 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LibertyStack Solutions — E-Commerce Systems &amp; Automation Engineers</title>
-  <meta name="description" content="LibertyStack builds custom Shopify storefronts, automation systems, and high-performance backend infrastructure for ambitious commerce brands.">
+  <title>LibertyStack Solutions — E-Commerce Systems & Automation Engineers</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar" id="main-navbar">
+  <nav class="navbar">
     <div class="container nav-container">
-      <a href="index.html" class="logo" id="logo-home">
-        <div class="logo-icon">LS</div>
-        <span>LibertyStack</span>
-      </a>
-      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation menu">☰</button>
-      <ul class="nav-menu" id="nav-menu-list">
+      <a href="index.html" class="logo"><span>LibertyStack</span></a>
+      <ul class="nav-menu">
         <li><a href="index.html" class="nav-link active">Home</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
         <li><a href="work.html" class="nav-link">Work</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
-        <li><a href="contact.html" class="btn btn-secondary btn-nav">Start a project</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
   <main>
     <section class="hero" id="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
           <h1>Digital systems with <span class="stripe-gradient-text">depth, speed,</span> and clarity.</h1>
           <p>LibertyStack designs high-performing Shopify themes and custom Python automation pipelines.</p>
-          <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary">Book a consultation →</a>
-            <a href="services.html" class="btn btn-secondary">Explore services</a>
+          <a href="contact.html" class="btn btn-primary">Book a consultation →</a>
+        </div>
+        <!-- Self-coding Terminal -->
+        <div class="terminal-container">
+          <div class="terminal-header"><span class="dot"></span><span class="title">libertystack-sync-daemon</span></div>
+          <div class="terminal-body" id="typing-terminal">
+            <pre><code>> [READY] Listening for commerce webhooks...
+> [WEBHOOK] Received payload for Order #4928-WS
+> [POSTGRES] Order #4928-WS written to db (0.012s)
+> [SLACK] Alert dispatched: Order #4928-WS</code></pre>
           </div>
+        </div>
+      </div>
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="container stats-grid">
+          <div class="stat-item"><h3>3x</h3><p>FASTER PAGE LOAD</p></div>
+          <div class="stat-item"><h3>25h+</h3><p>HOURS SAVED WEEKLY</p></div>
+          <div class="stat-item"><h3>99.9%</h3><p>API UPTIME</p></div>
+          <div class="stat-item"><h3>100%</h3><p>INVENTORY SYNC</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline Section -->
+    <section class="section" id="pipeline-section">
+      <div class="container">
+        <div class="pipeline-flow">
+          <div class="pipeline-step">🛒 Order Placed</div>
+          <div class="pipeline-step">📦 Inventory Sync</div>
+          <div class="pipeline-step">💬 Slack Feed</div>
+          <div class="pipeline-step">📊 ERP Ledger</div>
+        </div>
+        <div class="pipeline-control">
+          <span class="status">● Pipeline Idle</span>
+          <button class="btn btn-primary">Trigger Automation</button>
         </div>
       </div>
     </section>
   </main>
-
   <script src="assets/main.js"></script>
 </body>
 </html>
