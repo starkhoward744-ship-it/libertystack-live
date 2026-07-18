@@ -3,69 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LibertyStack Solutions — E-Commerce Systems & Automation Engineers</title>
+  <title>LibertyStack Solutions — Technical Engineering</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="container nav-container">
-      <a href="index.html" class="logo"><span>LibertyStack</span></a>
+      <a href="index.html" class="logo">LS <span>LibertyStack</span></a>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="work.html" class="nav-link">Work</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <section class="hero" id="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <h1>Digital systems with <span class="stripe-gradient-text">depth, speed,</span> and clarity.</h1>
-          <p>LibertyStack designs high-performing Shopify themes and custom Python automation pipelines.</p>
-          <a href="contact.html" class="btn btn-primary">Book a consultation →</a>
-        </div>
-        <!-- Self-coding Terminal -->
-        <div class="terminal-container">
-          <div class="terminal-header"><span class="dot"></span><span class="title">libertystack-sync-daemon</span></div>
-          <div class="terminal-body" id="typing-terminal">
-            <pre><code>> [READY] Listening for commerce webhooks...
-> [WEBHOOK] Received payload for Order #4928-WS
-> [POSTGRES] Order #4928-WS written to db (0.012s)
-> [SLACK] Alert dispatched: Order #4928-WS</code></pre>
-          </div>
-        </div>
-      </div>
-      <!-- Stats Bar -->
-      <div class="stats-bar">
-        <div class="container stats-grid">
-          <div class="stat-item"><h3>3x</h3><p>FASTER PAGE LOAD</p></div>
-          <div class="stat-item"><h3>25h+</h3><p>HOURS SAVED WEEKLY</p></div>
-          <div class="stat-item"><h3>99.9%</h3><p>API UPTIME</p></div>
-          <div class="stat-item"><h3>100%</h3><p>INVENTORY SYNC</p></div>
-        </div>
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Engineering systems <span class="cyber-gradient-text">that scale.</span></h1>
       </div>
     </section>
 
     <!-- Pipeline Section -->
     <section class="section" id="pipeline-section">
       <div class="container">
-        <div class="pipeline-flow">
-          <div class="pipeline-step">🛒 Order Placed</div>
-          <div class="pipeline-step">📦 Inventory Sync</div>
-          <div class="pipeline-step">💬 Slack Feed</div>
-          <div class="pipeline-step">📊 ERP Ledger</div>
+        <div class="pipeline-grid">
+          <div class="pipeline-card" id="step-1"><span class="icon">🛒</span><h3>Order Placed</h3><p>Shopify order webhook</p></div>
+          <div class="pipeline-card" id="step-2"><span class="icon">📦</span><h3>Inventory Sync</h3><p>Relational DB update</p></div>
+          <div class="pipeline-card" id="step-3"><span class="icon">💬</span><h3>Slack Feed</h3><p>Instant sales channel alert</p></div>
+          <div class="pipeline-card" id="step-4"><span class="icon">📊</span><h3>ERP Ledger</h3><p>Financial bookkeeping record</p></div>
         </div>
-        <div class="pipeline-control">
-          <span class="status">● Pipeline Idle</span>
-          <button class="btn btn-primary">Trigger Automation</button>
+        <div class="pipeline-control-bar">
+          <span class="status-indicator" id="status-dot"></span>
+          <span id="status-text">Pipeline Idle</span>
+          <button id="trigger-btn" class="btn-trigger">Trigger Automation</button>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">LibertyStack</div>
+      <div class="footer-nav">
+        <div class="footer-nav-title">STUDIO</div>
+        <a href="services.html">Services</a>
+        <a href="work.html">Our Work</a>
+        <a href="about.html">About Team</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-title">CONNECT</div>
+        <a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="assets/main.js"></script>
 </body>
 </html>
