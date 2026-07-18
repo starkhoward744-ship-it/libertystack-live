@@ -2,34 +2,25 @@
 
 :root {
   --bg-obsidian: #000000;
-  --bg-card: rgba(22, 22, 23, 0.6);
-  --border-color: rgba(255, 255, 255, 0.08);
-  --text-main: #f5f5f7;
-  --text-muted: #86868b;
+  --bg-card: #0d0d0f;
+  --border-color: #262626;
   --primary: #00d2ff;
   --secondary: #635bff;
   --success: #34c759;
+  --text-main: #ffffff;
+  --text-muted: #86868b;
 }
 
-body { background-color: var(--bg-obsidian); color: var(--text-main); font-family: 'Inter', sans-serif; }
+body { background: var(--bg-obsidian); color: var(--text-main); font-family: 'Inter', sans-serif; margin: 0; }
 
-/* Navigation */
-.navbar { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(0,0,0,0.75); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; height: 64px; }
-.nav-container { max-width: 1140px; margin: 0 auto; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 24px; }
-.nav-menu { display: flex; gap: 30px; list-style: none; }
+.navbar { padding: 20px 40px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); }
+.nav-menu { display: flex; gap: 20px; list-style: none; }
 .nav-link { color: var(--text-muted); text-decoration: none; }
 
-/* Grid Layouts - THIS FIXES YOUR PIPELINE VIEW */
-.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-.pipeline-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
-.pipeline-card { background: var(--bg-card); padding: 40px; border-radius: 18px; border: 1px solid var(--border-color); }
+.pipeline-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 40px; }
+.pipeline-card { background: var(--bg-card); padding: 20px; border: 1px solid var(--border-color); border-radius: 12px; }
 
-/* Footer */
-.footer { border-top: 1px solid var(--border-color); padding: 80px 0; margin-top: 100px; }
-.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 60px; }
+.playground-pulse { height: 4px; background: var(--secondary); width: 0%; transition: width 2s linear; }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .pipeline-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-}
+.contact-form-stage { display: none; }
+.contact-form-stage.active { display: block; }
