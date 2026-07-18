@@ -41,31 +41,16 @@
     <!-- Pipeline Visual Section -->
     <section class="section" id="pipeline-section">
       <div class="container">
-        <div class="pipeline-flow">
-          <div class="pipeline-step">🛒 Order Placed<span>Shopify order webhook</span></div>
-          <div class="pipeline-step">📦 Inventory Sync<span>Relational DB update</span></div>
-          <div class="pipeline-step">💬 Slack Feed<span>Instant sales channel alert</span></div>
-          <div class="pipeline-step">📊 ERP Ledger<span>Financial bookkeeping record</span></div>
+        <div class="pipeline-grid">
+          <div class="pipeline-card" id="step-1"><span class="icon">🛒</span><h3>Order Placed</h3><p>Shopify order webhook</p></div>
+          <div class="pipeline-card" id="step-2"><span class="icon">📦</span><h3>Inventory Sync</h3><p>Relational DB update</p></div>
+          <div class="pipeline-card" id="step-3"><span class="icon">💬</span><h3>Slack Feed</h3><p>Instant sales channel alert</p></div>
+          <div class="pipeline-card" id="step-4"><span class="icon">📊</span><h3>ERP Ledger</h3><p>Financial bookkeeping record</p></div>
         </div>
-        <div class="pipeline-control">
-          <span class="status">● Pipeline Idle</span>
-          <button class="btn btn-primary">Trigger Automation</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Terminal Component -->
-    <section class="section">
-      <div class="container">
-        <div class="terminal-container">
-          <div class="terminal-header"><span class="dot"></span><span class="title">libertystack-sync-daemon (production)</span></div>
-          <div class="terminal-body">
-            <pre><code>> [READY] Listening for commerce webhook events...
-> [WEBHOOK] Received payload for Order #4928-WS
-> [POSTGRES] Order #4928-WS written to db (0.012s)
-> [ERP] Synchronized invoice data to ERP system
-> [SLACK] Alert dispatched: Order #4928-WS ($340.00)</code></pre>
-          </div>
+        <div class="pipeline-control-bar">
+          <span class="status-indicator" id="status-dot"></span>
+          <span id="status-text">Pipeline Idle</span>
+          <button id="trigger-btn" class="btn btn-primary">Trigger Automation</button>
         </div>
       </div>
     </section>
@@ -74,13 +59,15 @@
     <section class="section" id="portfolio-section">
       <div class="container">
         <div class="filters-container">
-          <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
-          <button class="filter-btn" data-filter="ecommerce" id="filter-ecommerce">E-Commerce</button>
-          <button class="filter-btn" data-filter="automation" id="filter-automation">Automation</button>
-          <button class="filter-btn" data-filter="integrations" id="filter-integrations">API Integrations</button>
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="integrations">API Integrations</button>
         </div>
         <div class="portfolio-grid" id="portfolio-items-grid">
-          <!-- Projects content here -->
+          <div class="project-card" data-category="ecommerce"><h3>Storefront Alpha</h3><p>Custom Shopify Architecture</p></div>
+          <div class="project-card" data-category="automation"><h3>Data Sync</h3><p>Python Pipeline Logic</p></div>
+          <div class="project-card" data-category="integrations"><h3>ERP Bridge</h3><p>Custom API Integration</p></div>
         </div>
       </div>
     </section>
@@ -118,7 +105,7 @@
       <div class="footer-nav">
         <div class="footer-nav-title">Connect</div>
         <a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a>
-        <span style="color: var(--text-muted);">Hazaribagh, Jharkhand, India</span>
+        <span style="color: var(--text-muted); display: block; margin-top: 10px;">Hazaribagh, Jharkhand, India</span>
       </div>
     </div>
   </footer>
