@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You — LibertyStack Solutions</title>
+  <meta name="description" content="Thank you for contacting LibertyStack Solutions. We will reply within one business day.">
+  <meta name="theme-color" content="#07090d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .thank-you-page{min-height:100vh;display:grid;place-items:center;padding:120px 24px 72px;position:relative;overflow:hidden;isolation:isolate}
+    .thank-you-page::before,.thank-you-page::after{content:"";position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;pointer-events:none;z-index:-2;animation:thankYouFloat 9s ease-in-out infinite alternate}
+    .thank-you-page::before{width:420px;height:420px;top:4%;left:-140px;background:rgba(48,130,255,.62)}
+    .thank-you-page::after{width:460px;height:460px;right:-150px;bottom:-130px;background:rgba(116,75,255,.54);animation-delay:-4s}
+    .thank-you-grid{position:absolute;inset:0;z-index:-3;opacity:.2;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,transparent,#000 20%,#000 80%,transparent)}
+    .thank-you-card{width:min(760px,100%);text-align:center;padding:clamp(34px,6vw,70px);border:1px solid rgba(255,255,255,.14);border-radius:32px;background:linear-gradient(180deg,rgba(255,255,255,.095),rgba(255,255,255,.045));box-shadow:0 35px 110px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.13);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);position:relative;overflow:hidden;animation:thankYouReveal .85s cubic-bezier(.2,.8,.2,1) both}
+    .thank-you-card::before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;top:-85px;left:50%;transform:translateX(-50%);background:rgba(46,136,255,.38);filter:blur(60px);pointer-events:none}
+    .success-check{width:108px;height:108px;margin:0 auto 28px;display:grid;place-items:center;border-radius:50%;position:relative;background:linear-gradient(145deg,rgba(31,160,255,.28),rgba(79,72,255,.18));border:1px solid rgba(99,181,255,.4);box-shadow:0 0 0 10px rgba(51,139,255,.06),0 0 55px rgba(46,136,255,.34);animation:checkHalo 2.8s ease-in-out infinite}
+    .success-check svg{width:58px;height:58px;overflow:visible}.success-check circle{fill:none;stroke:rgba(255,255,255,.2);stroke-width:2}.success-check path{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:70;stroke-dashoffset:70;animation:drawCheck .7s .4s ease forwards;filter:drop-shadow(0 0 8px rgba(85,177,255,.9))}
+    .thank-you-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;margin-bottom:18px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.05);color:rgba(255,255,255,.74);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+    .thank-you-card h1{max-width:640px;margin:0 auto;font-size:clamp(2.25rem,6vw,4.8rem);line-height:.98;letter-spacing:-.055em}.thank-you-card h1 span{background:linear-gradient(90deg,#76c6ff,#6b7cff 55%,#b493ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .thank-you-copy{max-width:570px;margin:24px auto 0;color:rgba(255,255,255,.68);font-size:clamp(1rem,2vw,1.14rem);line-height:1.75}
+    .thank-you-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:34px}.thank-you-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.055);color:#fff;text-decoration:none;font-weight:700;transition:transform .25s ease,border-color .25s ease,background .25s ease}.thank-you-secondary:hover{transform:translateY(-3px);border-color:rgba(100,177,255,.5);background:rgba(82,137,255,.1)}
+    .social-block{margin-top:42px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1)}.social-block p{margin:0 0 16px;color:rgba(255,255,255,.56);font-size:.92rem}.thank-you-socials{display:flex;justify-content:center;gap:14px}
+    .social-icon-link{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.055);color:#fff;position:relative;overflow:hidden;transition:transform .28s cubic-bezier(.2,.8,.2,1),border-color .28s ease,box-shadow .28s ease,background .28s ease}.social-icon-link::before{content:"";position:absolute;inset:-80%;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.65) 50%,transparent 65%);transform:translateX(-65%) rotate(12deg);transition:transform .65s ease}.social-icon-link:hover,.social-icon-link:focus-visible{transform:translateY(-5px) scale(1.06);border-color:rgba(104,187,255,.62);background:rgba(67,125,255,.12);box-shadow:0 0 0 5px rgba(56,138,255,.08),0 12px 34px rgba(35,123,255,.28),0 0 24px rgba(81,161,255,.24);outline:none}.social-icon-link:hover::before,.social-icon-link:focus-visible::before{transform:translateX(65%) rotate(12deg)}.social-icon-link:active{transform:scale(.94)}.social-icon-link svg{width:24px;height:24px;fill:currentColor;position:relative;z-index:1}
+    .thank-you-note{margin-top:26px;color:rgba(255,255,255,.42);font-size:.82rem}
+    @keyframes drawCheck{to{stroke-dashoffset:0}}@keyframes checkHalo{0%,100%{transform:scale(1);box-shadow:0 0 0 10px rgba(51,139,255,.06),0 0 50px rgba(46,136,255,.28)}50%{transform:scale(1.045);box-shadow:0 0 0 16px rgba(51,139,255,.035),0 0 72px rgba(46,136,255,.48)}}@keyframes thankYouReveal{from{opacity:0;transform:translateY(18px) scale(.98);filter:blur(10px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}@keyframes thankYouFloat{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(45px,24px,0) scale(1.1)}}
+    @media(max-width:640px){.thank-you-page{padding:96px 16px 44px}.thank-you-card{padding:32px 20px;border-radius:24px}.success-check{width:88px;height:88px}.thank-you-actions{flex-direction:column}.thank-you-actions .button,.thank-you-secondary{width:100%}}
+    @media(prefers-reduced-motion:reduce){.thank-you-card,.success-check,.success-check path,.thank-you-page::before,.thank-you-page::after{animation:none!important}}
+  </style>
+</head>
+<body>
+  <div class="page-transition"></div>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html" aria-label="LibertyStack Solutions home"><span class="brand-mark">L</span><span>LibertyStack</span></a>
+    <nav class="desktop-nav" aria-label="Primary"><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <a class="button button-small desktop-cta" href="contact.html#book">Book a strategy call</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <div class="mobile-menu" aria-hidden="true"><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="button" href="contact.html#book">Book a strategy call</a></div>
+  <main class="thank-you-page">
+    <div class="thank-you-grid" aria-hidden="true"></div>
+    <section class="thank-you-card" aria-labelledby="thankYouTitle">
+      <div class="success-check" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"></circle><path d="M18 33.5 27.5 43 47 22"></path></svg></div>
+      <div class="thank-you-eyebrow">Message received</div>
+      <h1 id="thankYouTitle">Thank you for contacting <span>LibertyStack Solutions.</span></h1>
+      <p class="thank-you-copy">We’ll reply within one business day with the clearest next step for your project.</p>
+      <div class="thank-you-actions"><a class="button" href="contact.html#book">Book a strategy call <span>↗</span></a><a class="thank-you-secondary" href="index.html">Return to Home</a></div>
+      <div class="social-block"><p>Connect with LibertyStack</p><div class="thank-you-socials">
+        <a class="social-icon-link" href="https://www.linkedin.com/in/ishant-kumar-sharma" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.38 4.27 5.47v6.28ZM5.32 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/></svg></a>
+        <a class="social-icon-link" href="https://www.instagram.com/_scott_0320?igsh=MTJ5cDVhOWIwY25hOA%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Connect on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>
+        <a class="social-icon-link" href="https://x.com/IshantS29500977" target="_blank" rel="noopener noreferrer" aria-label="Connect on X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2H21l-6.03 6.9L22 22h-5.5l-4.3-5.63L7.27 22H4.5l6.41-7.33L4.17 2h5.64l3.89 5.14L18.24 2Zm-.97 17.7h1.53L8.98 4.18H7.34L17.27 19.7Z"/></svg></a>
+      </div></div>
+      <p class="thank-you-note">Your enquiry has been securely delivered to hello@libertystack.co.in.</p>
+    </section>
+  </main>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
