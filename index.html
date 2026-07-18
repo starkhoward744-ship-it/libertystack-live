@@ -1,14 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LibertyStack Solutions | Premium Web Engineering</title>
-    <link rel="stylesheet" href="/libertystack-live/assets/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibertyStack Solutions — E-Commerce Systems &amp; Automation Engineers</title>
+  <meta name="description" content="LibertyStack builds custom Shopify storefronts, automation systems, and high-performance backend infrastructure for ambitious commerce brands.">
+  <!-- Updated path -->
+  <link rel="stylesheet" href="/libertystack-live/assets/styles.css">
 </head>
 <body>
-    <!-- Add your navigation here -->
-    <h1>Welcome to LibertyStack</h1>
-    <script src="/libertystack-live/assets/main.js"></script>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="/libertystack-live/index.html" class="logo" id="logo-home">
+        <div class="logo-icon">LS</div>
+        <span>LibertyStack</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation menu">☰</button>
+      <ul class="nav-menu" id="nav-menu-list">
+        <li><a href="/libertystack-live/index.html" class="nav-link active">Home</a></li>
+        <li><a href="/libertystack-live/services.html" class="nav-link">Services</a></li>
+        <li><a href="/libertystack-live/work.html" class="nav-link">Work</a></li>
+        <li><a href="/libertystack-live/about.html" class="nav-link">About</a></li>
+        <li><a href="/libertystack-live/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/libertystack-live/contact.html" class="btn btn-secondary btn-nav">Start a project</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow-container">
+            <span class="eyebrow-text">Shopify Architecture &amp; Python APIs</span>
+          </div>
+          <h1>Digital systems with <span class="stripe-gradient-text">depth, speed,</span> and clarity.</h1>
+          <p>LibertyStack designs high-performing Shopify themes, backend integrations, and custom Python automation pipelines for e-commerce companies looking to scale operations and eliminate manual friction.</p>
+          <div class="hero-actions">
+            <a href="/libertystack-live/contact.html" class="btn btn-primary" id="hero-cta-primary">
+              Book a consultation
+              <span class="btn-icon">→</span>
+            </a>
+            <a href="/libertystack-live/services.html" class="btn btn-secondary" id="hero-cta-secondary">Explore services</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="console-mockup" id="sync-console-mockup">
+            <div class="console-header">
+              <div class="console-dots">
+                <span class="console-dot"></span>
+                <span class="console-dot"></span>
+                <span class="console-dot"></span>
+              </div>
+              <span class="console-title">libertystack-sync-daemon (production)</span>
+            </div>
+            <div class="console-body" id="live-console-body">
+              <!-- Live stdout lines injected here by main.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" id="stat-speed">
+            <div class="stat-number">3×</div>
+            <div class="stat-label">Faster Page Load</div>
+          </div>
+          <div class="stat-item" id="stat-hours">
+            <div class="stat-number">25h+</div>
+            <div class="stat-label">Hours Saved Weekly</div>
+          </div>
+          <div class="stat-item" id="stat-uptime">
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">API Uptime</div>
+          </div>
+          <div class="stat-item" id="stat-accuracy">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Inventory Sync</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Automation Playground -->
+    <section class="section" id="playground-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Interactive Demo</span>
+          <h2 class="gradient-text">See our automation systems in action.</h2>
+          <p>Simulate how a customer order updates inventory databases, fires slack messages to teams, and records sales to financial ledger systems instantly.</p>
+        </div>
+
+        <div class="playground-container">
+          <div class="playground-canvas" id="automation-playground-canvas">
+            <div class="playground-line"></div>
+            <div class="playground-pulse"></div>
+            
+            <div class="playground-nodes">
+              <!-- Node 1: Trigger -->
+              <div class="playground-node" id="node-trigger">
+                <div class="node-icon">🛒</div>
+                <div class="node-title">Order Placed</div>
+                <div class="node-desc">Shopify order webhook</div>
+              </div>
+              
+              <!-- Node 2: Inventory -->
+              <div class="playground-node" id="node-inventory">
+                <div class="node-icon">📦</div>
+                <div class="node-title">Inventory Sync</div>
+                <div class="node-desc">Relational DB update</div>
+              </div>
+              
+              <!-- Node 3: Slack Alert -->
+              <div class="playground-node" id="node-slack">
+                <div class="node-icon">💬</div>
+                <div class="node-title">Slack Feed</div>
+                <div class="node-desc">Instant sales channel alert</div>
+              </div>
+              
+              <!-- Node 4: ERP Ledger -->
+              <div class="playground-node" id="node-erp">
+                <div class="node-icon">📊</div>
+                <div class="node-title">ERP Ledger</div>
+                <div class="node-desc">Financial bookkeeping record</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="playground-control-panel">
+            <div class="playground-status">
+              <span class="status-dot idle"></span>
+              <span id="playground-status-text">Pipeline Idle</span>
+            </div>
+            <button class="btn btn-primary" id="start-automation-btn">Trigger Automation</button>
+          </div>
+
+          <div class="playground-console-logs" id="playground-logs-body">
+            <div class="playground-log-entry">
+              <span class="playground-log-timestamp">[System Ready]</span>
+              <span>Click "Trigger Automation" above to run the pipeline.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section" id="services-summary-section" style="background: rgba(255,255,255,0.01); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Capabilities</span>
+          <h2 class="gradient-text">Architecting stable digital pipelines.</h2>
+          <p>We combine design elegance with solid code infrastructure. We don't just build sites; we construct commerce ecosystems.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="glass-card service-card bento-card-large" id="service-card-shopify">
+            <div class="service-card-icon">🛍️</div>
+            <h3>Shopify Storefronts</h3>
+            <p>Custom Liquid themes and headless storefront integrations that prioritize conversion rate, SEO optimization, and load speed.</p>
+            <ul class="service-features-list">
+              <li>High-speed theme code architectures</li>
+              <li>Custom Checkout Extensions</li>
+              <li>Headless storefront migration</li>
+            </ul>
+          </article>
+
+          <article class="glass-card service-card" id="service-card-python">
+            <div class="service-card-icon">🐍</div>
+            <h3>Python Automation</h3>
+            <p>Background workers and integration layers designed to replace manual processes, database syncs, and manual bookkeeping exports.</p>
+          </article>
+
+          <article class="glass-card service-card" id="service-card-integrations">
+            <div class="service-card-icon">🔌</div>
+            <h3>Backend APIs</h3>
+            <p>Dependable API development linking your store directly to custom ERP, warehouse, payment, and marketing suites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section class="section" id="featured-work-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Case Studies</span>
+          <h2 class="gradient-text">Engineered for growth.</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="project-card" id="featured-project-aura">
+            <div class="project-content">
+              <h3><a href="/libertystack-live/work.html">Aura Home — Headless Migration</a> ↗</h3>
+              <p>Rebuilt legacy theme into a headless storefront powered by the Shopify Storefront API. Improved load times by 300%.</p>
+            </div>
+          </article>
+          <article class="project-card" id="featured-project-luxe">
+            <div class="project-content">
+              <h3><a href="/libertystack-live/work.html">Luxe Apparel — Warehouse Automation</a> ↗</h3>
+              <p>Constructed a private Python application connecting Shopify store databases to physical ERP and logistics inventory management systems.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section" id="home-cta-section">
+      <div class="container">
+        <div class="cta-banner" id="home-cta-banner">
+          <h2>Ready to optimize your e-commerce operations?</h2>
+          <a href="/libertystack-live/contact.html" class="btn btn-primary">Get started today →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/libertystack-live/index.html" class="logo">
+          <div class="logo-icon">LS</div>
+          <span>LibertyStack</span>
+        </a>
+        <p>Premium web engineering and automation studio.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-title">Studio</div>
+        <a href="/libertystack-live/services.html">Services</a>
+        <a href="/libertystack-live/work.html">Our Work</a>
+        <a href="/libertystack-live/about.html">About Team</a>
+        <a href="/libertystack-live/contact.html">Contact Us</a>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-title">Connect</div>
+        <a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a>
+        <span style="color: var(--text-muted);">Hazaribagh, Jharkhand, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Updated path -->
+  <script src="/libertystack-live/assets/main.js"></script>
 </body>
 </html>
