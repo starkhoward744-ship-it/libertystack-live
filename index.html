@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — LibertyStack Solutions</title>
+  <meta name="description" content="Reach out to LibertyStack Solutions to build Shopify stores, custom API backend structures, or python data automation tools.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="logo-home">
+        <div class="logo-icon">LS</div>
+        <span>LibertyStack</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation menu">☰</button>
+      <ul class="nav-menu" id="nav-menu-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="work.html" class="nav-link">Work</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-secondary btn-nav">Start a project</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" id="contact-hero">
+      <div class="container">
+        <span class="eyebrow">Start a Project</span>
+        <h1>Let's build <span class="cyber-gradient-text">serious systems.</span></h1>
+        <p>Tell us about your storefront bottlenecks, database integration needs, or manual workflow spreadsheets. We will follow up with design mockups and structured system plans.</p>
+      </div>
+      <!-- Decorative Orbs -->
+      <div class="orb orb-1" style="top: 10%; right: 10%;"></div>
+      <div class="orb orb-2" style="bottom: 20%; left: 5%;"></div>
+    </section>
+
+    <!-- Contact Form & Info Layout -->
+    <section class="section" id="contact-details-section">
+      <div class="container contact-layout">
+        
+        <!-- Column 1: Info blocks -->
+        <div class="contact-info" id="contact-info-panel">
+          <div class="contact-info-block" id="contact-email">
+            <h3>Direct Email</h3>
+            <p><a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a></p>
+          </div>
+          
+          <div class="contact-info-block" id="contact-location">
+            <h3>Location</h3>
+            <p>Hazaribagh, Jharkhand, India</p>
+          </div>
+
+          <div class="contact-info-block" id="contact-availability">
+            <h3>Working Terms</h3>
+            <p>Remote Worldwide</p>
+          </div>
+        </div>
+
+        <!-- Column 2: Interactive intake form panel -->
+        <div class="contact-form-panel" id="contact-form-panel">
+          
+          <!-- Steps progress indicator -->
+          <div class="contact-steps-indicator" id="form-steps-indicator">
+            <span class="step-indicator-bar active"></span>
+            <span class="step-indicator-bar"></span>
+            <span class="step-indicator-bar"></span>
+          </div>
+
+          <form id="project-intake-form" novalidate>
+            <!-- STAGE 1: Profile details -->
+            <div class="contact-form-stage active" id="form-stage-profile">
+              <h3>Tell us about yourself</h3>
+              
+              <div class="form-group">
+                <label for="client-name" class="form-label">What is your name? *</label>
+                <input type="text" id="client-name" class="form-input" placeholder="e.g. Ishant Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="client-email" class="form-label">Work email address *</label>
+                <input type="email" id="client-email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="client-company" class="form-label">Company / Brand Name</label>
+                <input type="text" id="client-company" class="form-input" placeholder="e.g. LibertyStack Solutions">
+              </div>
+            </div>
+
+            <!-- STAGE 2: Service Focus selection -->
+            <div class="contact-form-stage" id="form-stage-focus">
+              <h3>What system needs attention?</h3>
+              <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 14px;">Select the primary technical service requirement for your project.</p>
+              
+              <input type="hidden" name="service" id="selected-service" value="shopify">
+
+              <div class="grid-selector">
+                <div class="selector-option active" data-value="shopify">
+                  Shopify Storefronts
+                </div>
+                <div class="selector-option" data-value="automation">
+                  Python Automation
+                </div>
+                <div class="selector-option" data-value="integrations">
+                  Backend API Sync
+                </div>
+                <div class="selector-option" data-value="ecosystem">
+                  Full System Audit
+                </div>
+              </div>
+            </div>
+
+            <!-- STAGE 3: Budget and project details -->
+            <div class="contact-form-stage" id="form-stage-details">
+              <h3>Project scale &amp; context</h3>
+              
+              <div class="form-group">
+                <label class="form-label">Estimated Budget: <span id="budget-value" style="color: var(--primary); font-weight: 700;">$5,000</span></label>
+                <div class="slider-container">
+                  <input type="range" id="project-budget" class="range-slider" min="2500" max="25000" step="2500" value="5000">
+                  <div class="slider-labels">
+                    <span>$2,500</span>
+                    <span>$12,500</span>
+                    <span>$25,000+</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="project-description" class="form-label">Tell us about the project bottlenecks *</label>
+                <textarea id="project-description" class="form-input" placeholder="Describe the current site layout problems, sheet automations, or API requirements..." required></textarea>
+              </div>
+            </div>
+
+            <!-- Form Navigation controls -->
+            <div class="form-navigation">
+              <button type="button" class="btn btn-secondary" id="btn-prev" style="display: none;">Back</button>
+              <button type="button" class="btn btn-secondary" id="btn-next" style="margin-left: auto;">Continue →</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand" id="footer-brand-info">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">LS</div>
+          <span>LibertyStack</span>
+        </a>
+        <p>Premium web engineering and automation studio for scaling commerce setups.</p>
+      </div>
+      
+      <div class="footer-nav" id="footer-nav-links">
+        <div class="footer-nav-title">Studio</div>
+        <a href="services.html">Services</a>
+        <a href="work.html">Our Work</a>
+        <a href="about.html">About Team</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-nav" id="footer-contact-details">
+        <div class="footer-nav-title">Connect</div>
+        <a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a>
+        <span style="color: var(--text-muted);">Hazaribagh, Jharkhand, India</span>
+        <span style="color: var(--text-dark); font-size: 13px;">Remote Worldwide</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div id="footer-copyright">&copy; 2026 LibertyStack Solutions. All rights reserved.</div>
+      <div class="footer-socials" id="footer-social-media">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="X">X (Twitter)</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
