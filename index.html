@@ -1,71 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LibertyStack Solutions — Technical Engineering</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">LS <span>LibertyStack</span></a>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Hero -->
-    <section class="page-hero">
-      <div class="container">
-        <h1>Engineering systems <span class="cyber-gradient-text">that scale.</span></h1>
-      </div>
-    </section>
-
-    <!-- Pipeline Section -->
-    <section class="section" id="pipeline-section">
-      <div class="container">
-        <div class="pipeline-grid">
-          <div class="pipeline-card" id="step-1"><span class="icon">🛒</span><h3>Order Placed</h3><p>Shopify order webhook</p></div>
-          <div class="pipeline-card" id="step-2"><span class="icon">📦</span><h3>Inventory Sync</h3><p>Relational DB update</p></div>
-          <div class="pipeline-card" id="step-3"><span class="icon">💬</span><h3>Slack Feed</h3><p>Instant sales channel alert</p></div>
-          <div class="pipeline-card" id="step-4"><span class="icon">📊</span><h3>ERP Ledger</h3><p>Financial bookkeeping record</p></div>
-        </div>
-        <div class="pipeline-control-bar">
-          <span class="status-indicator" id="status-dot"></span>
-          <span id="status-text">Pipeline Idle</span>
-          <button id="trigger-btn" class="btn-trigger">Trigger Automation</button>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">LibertyStack</div>
-      <div class="footer-nav">
-        <div class="footer-nav-title">STUDIO</div>
-        <a href="services.html">Services</a>
-        <a href="work.html">Our Work</a>
-        <a href="about.html">About Team</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-      <div class="footer-nav">
-        <div class="footer-nav-title">CONNECT</div>
-        <a href="mailto:hello@libertystack.co.in">hello@libertystack.co.in</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/main.js"></script>
-</body>
-</html>
+<nav class="navbar"><a href="index.html">LibertyStack</a><ul class="nav-menu"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="services.html" class="nav-link">Services</a></li><li><a href="work.html" class="nav-link">Work</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul></nav>
+<div class="pipeline-grid">
+    <div class="pipeline-card"><h3>Order Placed</h3></div>
+    <div class="pipeline-card"><h3>Inventory Sync</h3></div>
+    <div class="pipeline-card"><h3>Slack Feed</h3></div>
+    <div class="pipeline-card"><h3>ERP Ledger</h3></div>
+</div>
+<button onclick="runPipeline()">Trigger Automation</button>
+<div class="playground-pulse"></div>
+<script src="assets/main.js"></script>
