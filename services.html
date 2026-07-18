@@ -38,20 +38,20 @@
       </div>
     </section>
 
-    <!-- Pipeline Visual Section -->
+    <!-- Pipeline Visual Section (Updated IDs for JS) -->
     <section class="section" id="pipeline-section">
       <div class="container">
-        <div class="pipeline-flow">
-          <div class="pipeline-step">🛒 Order Placed<span>Shopify order webhook</span></div>
-          <div class="pipeline-step">📦 Inventory Sync<span>Relational DB update</span></div>
-          <div class="pipeline-step">💬 Slack Feed<span>Instant sales channel alert</span></div>
-          <div class="pipeline-step">📊 ERP Ledger<span>Financial bookkeeping record</span></div>
+        <div class="pipeline-grid">
+          <div class="pipeline-card" id="step-1"><span class="icon">🛒</span><h3>Order Placed</h3><p>Shopify order webhook</p></div>
+          <div class="pipeline-card" id="step-2"><span class="icon">📦</span><h3>Inventory Sync</h3><p>Relational DB update</p></div>
+          <div class="pipeline-card" id="step-3"><span class="icon">💬</span><h3>Slack Feed</h3><p>Instant sales channel alert</p></div>
+          <div class="pipeline-card" id="step-4"><span class="icon">📊</span><h3>ERP Ledger</h3><p>Financial bookkeeping record</p></div>
         </div>
-        <div class="pipeline-control">
-          <span class="status">● Pipeline Idle</span>
-          <button class="btn btn-primary">Trigger Automation</button>
+        <div class="pipeline-control-bar">
+          <span class="status-indicator" id="status-dot"></span>
+          <span id="status-text">Pipeline Idle</span>
+          <button id="trigger-btn" class="btn-primary">Trigger Automation</button>
         </div>
-        <div class="console-output">[System Ready] Click "Trigger Automation" above to run the pipeline.</div>
       </div>
     </section>
 
