@@ -38,6 +38,38 @@
       </div>
     </section>
 
+    <!-- Pipeline Visual Section -->
+    <section class="section" id="pipeline-section">
+      <div class="container">
+        <div class="pipeline-flow">
+          <div class="pipeline-step">🛒 Order Placed<span>Shopify order webhook</span></div>
+          <div class="pipeline-step">📦 Inventory Sync<span>Relational DB update</span></div>
+          <div class="pipeline-step">💬 Slack Feed<span>Instant sales channel alert</span></div>
+          <div class="pipeline-step">📊 ERP Ledger<span>Financial bookkeeping record</span></div>
+        </div>
+        <div class="pipeline-control">
+          <span class="status">● Pipeline Idle</span>
+          <button class="btn btn-primary">Trigger Automation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal Component -->
+    <section class="section">
+      <div class="container">
+        <div class="terminal-container">
+          <div class="terminal-header"><span class="dot"></span><span class="title">libertystack-sync-daemon (production)</span></div>
+          <div class="terminal-body">
+            <pre><code>> [READY] Listening for commerce webhook events...
+> [WEBHOOK] Received payload for Order #4928-WS
+> [POSTGRES] Order #4928-WS written to db (0.012s)
+> [ERP] Synchronized invoice data to ERP system
+> [SLACK] Alert dispatched: Order #4928-WS ($340.00)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Section -->
     <section class="section" id="portfolio-section">
       <div class="container">
