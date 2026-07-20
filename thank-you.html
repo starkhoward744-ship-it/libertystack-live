@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
+  <script>try{const t=localStorage.getItem("ls-theme")||"system";const d=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t;document.documentElement.dataset.theme=d;document.documentElement.dataset.themePreference=t}catch(e){}</script><link rel="stylesheet" href="assets/styles.css">
   <style>
     .thank-you-page{min-height:100vh;display:grid;place-items:center;padding:120px 24px 72px;position:relative;overflow:hidden;isolation:isolate}
     .thank-you-page::before,.thank-you-page::after{content:"";position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;pointer-events:none;z-index:-2;animation:thankYouFloat 9s ease-in-out infinite alternate}
@@ -37,7 +37,7 @@
   <header class="site-header" id="siteHeader">
     <a class="brand" href="index.html" aria-label="LibertyStack Solutions home"><img class="brand-logo" src="assets/libertystack-logo.png" alt="LibertyStack Solutions logo" width="52" height="52"><span>LibertyStack</span></a>
     <nav class="desktop-nav" aria-label="Primary"><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
-    <a class="button button-small desktop-cta calendly-link" href="https://calendly.com/ishant-libertystack/new-meeting" target="_blank" rel="noopener noreferrer">Book a strategy call</a>
+    <button class="theme-toggle" type="button" aria-label="Change color theme" title="Theme: system"><span class="theme-icon" aria-hidden="true">◐</span></button><a class="button button-small desktop-cta calendly-link" href="https://calendly.com/ishant-libertystack/new-meeting" target="_blank" rel="noopener noreferrer">Book a strategy call</a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
   </header>
   <div class="mobile-menu" aria-hidden="true"><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="button calendly-link" href="https://calendly.com/ishant-libertystack/new-meeting" target="_blank" rel="noopener noreferrer">Book a strategy call</a></div>
