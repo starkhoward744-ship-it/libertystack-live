@@ -81,3 +81,11 @@ body.page-leaving>main,body.page-leaving>.site-header,body.page-leaving>.footer,
 .google-form-button{width:max-content;max-width:100%;text-align:center}
 .google-form-card .form-note{display:block;color:#858b9b;line-height:1.6;margin-top:20px}
 @media(max-width:600px){.google-form-card{padding:24px;min-height:300px}.google-form-button{width:100%}}
+
+
+/* Header actions: project inquiry alongside strategy booking */
+.header-ctas{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.header-ctas .button{white-space:nowrap}
+.header-ctas .google-form-header-cta{border-color:rgba(255,255,255,.2);color:#e9ecf7;background:rgba(255,255,255,.055);box-shadow:none}
+.header-ctas .google-form-header-cta:hover{background:rgba(255,255,255,.12);box-shadow:0 10px 30px rgba(120,134,255,.12)}
+@media(max-width:900px){.header-ctas.desktop-cta{display:none}}
